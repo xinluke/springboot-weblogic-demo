@@ -13,3 +13,22 @@ WebLogic Server 版本: 12.1.3.0.0
 ```
 http://localhost:7001/spring-boot-weblogic-demo/hello?name=test123
 ```
+## 编译工程
+```
+mvn clean package
+```
+## 使用docker的方式启动weblogic服务
+How To Use:
+```
+docker pull ismaleiva90/weblogic12
+```
+To start the docker machine with 7001, 7002 and 5556 ports opened:
+```
+docker run -d -p 7001:7001 -p 7002:7002 -p 5556:5556 ismaleiva90/weblogic12:latest
+```
+Web Console
+```
+http://localhost:49163/console
+User: weblogic
+Pass: welcome1
+```
